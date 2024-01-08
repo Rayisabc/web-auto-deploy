@@ -1,0 +1,17 @@
+# Docker server address
+ServerIp = "1.2.3.4"
+# Docker server username
+Username = "root"
+# Docker server password
+Password = "abcd@1234"
+# Local web dist folder
+LocalDirectory = "C:/zip/dist"
+# Docker server docker folder
+ServerDir = "/usr/local/docker/workspace"
+# Docker deploy script name
+ScriptName = "deploy.sh"
+# Depending on the different environments, the folder name is different.
+# Options: test|pre|prd
+ServiceDir = "test"
+# whether to execute the shell
+ExecuteShell = true
