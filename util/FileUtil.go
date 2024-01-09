@@ -1,6 +1,6 @@
 // Author: Rui
 // Date: 2023/01/08 16:20
-// Description: caculate dir size
+// Description: calculate folder total size
 
 package util
 

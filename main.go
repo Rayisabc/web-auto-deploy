@@ -21,7 +21,8 @@ import (
 var (
 	user, password, scriptName, host, localFilePath, remoteFilePath string
 	executeShell                                                    bool
-	sleepSeconds                                                    int = 10
+	// default sleep seconds
+	sleepSeconds int = 10
 )
 
 const fileName string = "dist.zip"
@@ -62,7 +63,7 @@ func loopMonitor(localDir string) {
 			go doSync()
 			sleepSeconds = 60
 		} else {
-			log.Println("### no change found")
+			log.Println("### No changes found")
 			sleepSeconds = 10
 		}
 
@@ -71,6 +72,7 @@ func loopMonitor(localDir string) {
 }
 
 func doSync() {
+	log.Printf("### %s start \n", serviceName)
 	util.Info.Printf("### %s start \n", serviceName)
 
 	// zip file
@@ -99,6 +101,7 @@ func doSync() {
 	// remove local zip file
 	os.Remove(localZipFile)
 
+	log.Printf("### %s Finished", serviceName)
 	util.Info.Printf("### %s Finished", serviceName)
 }
 

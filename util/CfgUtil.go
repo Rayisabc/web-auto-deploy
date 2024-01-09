@@ -26,12 +26,12 @@ func (c *CfgUtil) ReadConfig() model.Config {
 	configFile := filepath.Join(execDir, filename)
 	data, err := os.ReadFile(configFile)
 	if err != nil {
-		Warn.Println("Custom config.toml not found")
+		Warn.Println("### Custom config.toml not found")
 		data, err = os.ReadFile("config.toml")
 		if err != nil {
 			panic(err)
 		}
-		Warn.Println("Use the default config")
+		Warn.Println("### Use the default config")
 	}
 
 	var config model.Config
