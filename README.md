@@ -13,10 +13,10 @@ of course,you can disabled the configuration of the shell by setting the `Execut
 
 ## Getting Started
 
-1、make sure you have installed the Golang SDK on your computer.
-2、Clone the project to your local disk.
-3、Update the configuration in the `config.toml` file.
-4、Run the project with the following command:
+1、make sure you have installed the Golang SDK on your computer.  
+2、Clone the project to your local disk.  
+3、Update the configuration in the `config.toml` file.  
+4、Run the project with the following command:  
 
 ```bash
 go run main.go
