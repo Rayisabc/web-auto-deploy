@@ -42,10 +42,11 @@ function version_rise() {
     # new_version
     echo "$new_version"
 }
-
+# @see config.toml:{ServiceDir}
+current_dir=test
 # yours service name
 service_name={service-name}
-# yours image repository
+# yours docker repository
 image_name={yours_repository}/$service_name
 
 echo '### start check image version'
@@ -69,6 +70,8 @@ image_tag=$new_version
 echo
 echo "### start building{$service_name}image, version : $image_tag,repository:$image_name"
 echo
+
+cd /usr/local/{your_workspace}/$current_dir
 
 docker build -t $image_name:$image_tag . -f {Dockerfile_name}
 

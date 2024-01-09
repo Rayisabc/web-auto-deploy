@@ -22,6 +22,11 @@ of course,you can disabled the configuration of the shell by setting the `Execut
 go run main.go
 ```
 
+## Notice
+This program is only for personal learning and research, please do not use it for commercial purposes.   
+This program is for reference only, and its legality, accuracy, and effectiveness are not guaranteed. Please judge according to the situation.   
+Due to the use of third-party libraries, there may be security risks. Please read the relevant documentation carefully before using it.
+
 ## License
 
 "MIT"
